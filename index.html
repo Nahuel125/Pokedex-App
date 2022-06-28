@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeWiki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/pokebola.png" type="image/x-icon">
+</head>
+<body>
+    <main class="mainContainer">
+        <section class="infoPokemon cardPrincipal">
+            <div class="cardInfo">
+                <div class="imgContainer">
+                    <img id="imgPokemon" class="imgPokemon" alt="">
+                </div>
+                <div class="errorContainer ocultDescription" id="errorContainer">
+                    <h2 id="errorMessage">Nombre o ID inválido</h2>
+                </div>
+                <div id="descriptionPokemon" class="descriptionPokemon ocultDescription">
+                    <h2 id="namePokemon"></h2>
+                    <p><b>HP:</b> <span id="hp"></span></p>
+                    <p><b>Defense:</b> <span id="defense"></span></p>
+                    <p><b>Attack:</b> <span id="attack"></span></p>
+                </div>
+            </div>
+        </section>
+        <section class="searchPokemon cardPrincipal">
+            <h1>Encuentra tu Pokemon</h1>
+            <input id="inputSearch" type="text" placeholder=" ID o nombre...">
+            <button id="buttonSearch">Buscar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
