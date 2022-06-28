@@ -1,4 +1,8 @@
 /* ESTILOS GENERALES */
+:root {
+    --color-principal: #15d0f4;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +41,7 @@
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
-    background-color: rgb(241, 241, 241);
+    background-color: var(--color-principal);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,5 +111,29 @@
     text-transform: uppercase;
     font-weight: 600;
     border-radius: 5px;
-    background-color: #15d0f4;
+    background-color: var(--color-principal);
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+    .mainContainer {
+        flex-direction: row;
+    }
+
+    .searchPokemon {
+        order: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .searchPokemon input {
+        width: 80%;
+        height: 10%;
+    }
+
+    .searchPokemon button {
+        height: 10%;
+        margin-top: -100px;
+        font-weight: 800;
+    }
 }
